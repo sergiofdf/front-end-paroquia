@@ -13,6 +13,6 @@ export const Container = styled.div`
   }
 
   .dateFilter {
-    margin: 12px
+    margin: 12px;
   }
 `;

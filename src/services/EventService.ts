@@ -8,4 +8,9 @@ export class EventService {
     return response.data;
   }
 
+  static async deleteChurchEventById(id: string): Promise<any> {
+    const response =  await api.delete(`/church-events/${id}`);
+    return response.data;
+  }
+
 }
