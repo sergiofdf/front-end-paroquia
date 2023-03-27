@@ -36,11 +36,11 @@ export function EventCard( { churchEvent, handleDelete }: Props) {
       </div>
       <div>
         <h1 className='label'>Início:</h1>
-        { startDateTime != null && <p>{ getHours(startDateTime) + ':' + getMinutes(startDateTime)  }</p> }
+        { startDateTime != null && <p>{ getHours(startDateTime).toString().padStart(2, '0') + ':' + getMinutes(startDateTime).toString().padStart(2, '0')  }</p> }
       </div>
       <div>
         <h1 className='label'>Fim:</h1>
-        { endDateTime != null && <p>{ getHours(endDateTime) + ':' + getMinutes(endDateTime)  }</p> }
+        { endDateTime != null && <p>{ getHours(endDateTime).toString().padStart(2, '0') + ':' + getMinutes(endDateTime).toString().padStart(2, '0')  }</p> }
       </div>
       <div>
         <h1 className='label'>Status:</h1>
